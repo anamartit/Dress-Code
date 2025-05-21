@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camiseta AR Viewer</title>
+  <script type="module" src="https://unpkg.com/three@0.156.1/build/three.module.js"></script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+    model-viewer {
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <model-viewer 
+    src="t-shirt.glb"
+    alt="Camiseta AR"
+    ar 
+    ar-modes="webxr scene-viewer quick-look"
+    auto-rotate 
+    camera-controls 
+    exposure="1"
+    environment-image="neutral"
+    shadow-intensity="1"
+    ios-src="t-shirt.glb">
+  </model-viewer>
+</body>
+</html>
